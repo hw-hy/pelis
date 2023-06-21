@@ -1,0 +1,22 @@
+<h2>Mis Pelis</h2>
+<ul class="pelis">
+  <li *ngFor="let peli of pelis">
+    <button
+      [class.selected]="peli === selectedPeli"
+      type="button"
+      (click)="onSelect(peli)"
+    >
+      <span class="badge">{{ peli.id }}</span>
+      <span class="name">{{ peli.name }}</span>
+    </button>
+  </li>
+</ul>
+
+<div *ngIf="selectedPeli">
+  <h2>{{ selectedPeli.name | uppercase }} Details</h2>
+  <div>id: {{ selectedPeli.id }}</div>
+  <div>
+    <label for="peli-name">Peli name: </label>
+    <input id="peli-name" [(ngModel)]="selectedPeli.name" placeholder="name" />
+  </div>
+</div>
