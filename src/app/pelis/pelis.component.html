@@ -21,7 +21,7 @@
       <h2>{{ selectedPeli.name | uppercase }} Details</h2>
       <div>id: {{ selectedPeli.id }}</div>
       <div>name: {{ selectedPeli.name }}</div>
-      <img cImg fluid src= selectedPeli.poster >
+      <img class="image" [src]="selectedPeli.poster">
     </div>
   </div>
 </div>

@@ -5,6 +5,7 @@ import { PELIS } from '../lista-pelis';
 @Component({
   selector: 'app-pelis',
   templateUrl: './pelis.component.html',
+  // providers: [PelisService],
   styleUrls: ['./pelis.component.css'],
 })
 export class PelisComponent {
