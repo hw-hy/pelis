@@ -1,7 +1,7 @@
 import { Peli } from './peli';
 
 export const PELIS: Peli[] = [
-  { id: 12, name: 'Porco Rosso', poster: 'assets/bed.jpg' },
+  { id: 12, name: 'Porco Rosso', poster: 'assets/avatar.png' },
   { id: 13, name: 'Oldboy', poster: 'assets/avatar.png' },
   { id: 14, name: 'Vivre Sa Vie', poster: 'assets/avatar.png' },
   { id: 15, name: 'Bettlejuice', poster: 'assets/avatar.png' },
